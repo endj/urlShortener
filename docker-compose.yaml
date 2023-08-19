@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: db
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: shorturl
+      MYSQL_DATABASE: shorturl
+      MYSQL_USER: shorturl
+      MYSQL_PASSWORD: shorturl
